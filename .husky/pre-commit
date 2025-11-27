@@ -1,6 +1,6 @@
 # Set the filename
-FILENAME=version-project.ts
-# Define Directiory
+FILENAME=project-version.ts
+# Define Directory
 DIR=$FILENAME
 # How the version was built 🥵
 # %Y - Year
@@ -16,7 +16,7 @@ fi
 # Create VERSION NAME File
 echo "export const VERSION = $VERSION_VALUE" > $DIR && git add $DIR
 
-pnpm lint --fix
-# pnpm snyk
-# pnpm sonar
-pnpm build
+npm run lint --fix
+# npm run snyk
+# npm run sonar
+npm run build

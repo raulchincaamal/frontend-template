@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Install dependencies based on the preferred package manager
 COPY package.json package-lock.json ./
-RUN pnpm ci
+RUN npm run ci
 
 # Rebuild the source code only when needed
 FROM base AS builder
@@ -22,10 +22,10 @@ COPY . .
 ENV NEXT_TELEMETRY_DISABLED=1
 
 # Print version number during build
-RUN echo "Compiled version:" && cat version-project.ts | grep VERSION
+RUN echo "Compiled version:" && cat project-version.ts | grep VERSION
 
 # If using npm comment out above and use below instead
-RUN pnpm build
+RUN npm run build
 
 # Production image, copy all the files and run next
 FROM base AS runner
