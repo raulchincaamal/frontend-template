@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "prepare": "husky"
   },
   "dependencies": {
     "next": "16.0.5",
@@ -14,12 +15,24 @@
     "react-dom": "19.2.0"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "3.3.0",
+    "@eslint/js": "9.39.1",
+    "@svgr/webpack": "8.1.0",
     "@tailwindcss/postcss": "^4",
+    "@types/lodash": "4.14.202",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/uuid": "9.0.7",
+    "@typescript-eslint/eslint-plugin": "8.48.0",
+    "@typescript-eslint/parser": "8.48.0",
     "eslint": "^9",
     "eslint-config-next": "16.0.5",
+    "eslint-config-prettier": "10.0.1",
+    "eslint-plugin-prettier": "5.2.3",
+    "husky": "9.1.7",
+    "prettier": "3.2.4",
+    "prettier-plugin-tailwindcss": "0.6.11",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

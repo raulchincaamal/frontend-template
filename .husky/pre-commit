@@ -1,0 +1,22 @@
+# Set the filename
+FILENAME=version-project.ts
+# Define Directiory
+DIR=$FILENAME
+# How the version was built 🥵
+# %Y - Year
+# %m - month (01..12)
+# %d - day of month
+# %H - hour (00..23)
+VERSION_VALUE=$(date +"%Y%m%d%H")
+# Check the file is exists or not
+if [ -f $FILENAME ]; then
+  rm $FILENAME
+fi
+
+# Create VERSION NAME File
+echo "export const VERSION = $VERSION_VALUE" > $DIR && git add $DIR
+
+pnpm lint --fix
+# pnpm snyk
+# pnpm sonar
+pnpm build
