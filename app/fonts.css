@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Light.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Light.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Regular.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Medium.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-MediumOblique.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-MediumOblique.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Demi.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Demi.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-Heavy.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-Heavy.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AvenirNextLTPro";
+  src: local("AvenirNextLTPro"),
+    url("./../assets/fonts/AvenirNextLTPro-HeavyOblique.woff") format("woff"),
+    url("./../assets/fonts/AvenirNextLTPro-HeavyOblique.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}

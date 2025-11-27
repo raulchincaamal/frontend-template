@@ -1,0 +1,125 @@
+{
+  "commitizen": {
+    "name": "cz_customize",
+    "tag_format": "$version",
+    "version_scheme": "semver",
+    "version_provider": "npm",
+    "update_changelog_on_bump": true,
+    "changelog_incremental": true,
+    "major_version_zero": false,
+    "customize": {
+      "message_template": "{{change_type}}:{% if show_message %} {{message}}{% endif %}",
+      "example": "feature: this feature enable customize through config file",
+      "schema": "<type>: <body>",
+      "schema_pattern": "(feature|bug fix|chore|docs|style|refactor|perf|test|build|ci|hot fix|break):(\\s.*)",
+      "bump_pattern": "^(feature|bug fix|chore|docs|style|refactor|perf|test|build|ci|hot fix|break)",
+      "bump_map": {
+        "break": "MAJOR",
+        "feature": "MINOR",
+        "bug fix": "MINOR",
+        "chore": "PATCH",
+        "docs": "PATCH",
+        "style": "PATCH",
+        "refactor": "PATCH",
+        "perf": "MINOR",
+        "test": "PATCH",
+        "build": "MINOR",
+        "ci": "MINOR",
+        "hot fix": "PATCH"
+      },
+      "change_type_order": [
+        "BREAKING CHANGE",
+        "hot fix",
+        "feat",
+        "fix",
+        "refactor",
+        "perf"
+      ],
+      "info_path": "cz_customize_info.txt",
+      "info": "Esto es información personalizada",
+      "commit_parser": "^(?P<change_type>feature|bug fix|chore|docs|style|refactor|perf|test|build|ci|hot fix|break):\\s(?P<message>.*)?",
+      "changelog_pattern": "^(feature|bug fix|chore|docs|style|refactor|perf|test|build|ci|hot fix|break)?(!)?",
+      "change_type_map": {
+        "feature": "Feat",
+        "bug fix": "Fix",
+        "chore": "Chore",
+        "docs": "Docs",
+        "style": "Style",
+        "refactor": "Refactor",
+        "perf": "Perf",
+        "test": "Test",
+        "build": "Build",
+        "ci": "CI",
+        "hot fix": "Hot Fix",
+        "break": "Break"
+      },
+      "questions": [
+        {
+          "type": "list",
+          "name": "change_type",
+          "choices": [
+            {
+              "value": "feature",
+              "name": "feature: Nueva funcionalidad."
+            },
+            {
+              "value": "bug fix",
+              "name": "bug fix: Corrección de errores."
+            },
+            {
+              "value": "chore",
+              "name": "chore: Cambios menores que no afectan la funcionalidad."
+            },
+            {
+              "value": "docs",
+              "name": "docs: Cambios en documentación."
+            },
+            {
+              "value": "style",
+              "name": "style: Cambios de formato (sin afectar el código funcional)."
+            },
+            {
+              "value": "refactor",
+              "name": "refactor: Refactorización del código sin alterar su comportamiento."
+            },
+            {
+              "value": "perf",
+              "name": "perf: Mejoras de rendimiento."
+            },
+            {
+              "value": "test",
+              "name": "test: Adición o modificación de pruebas."
+            },
+            {
+              "value": "build",
+              "name": "build: Cambios relacionados con herramientas de construcción o dependencias externas."
+            },
+            {
+              "value": "ci",
+              "name": "ci: Cambios en el flujo de integración continua."
+            },
+            {
+              "value": "hot fix",
+              "name": "hot fix: Cambio critico, urgente. No pasará por QA"
+            },
+            {
+              "value": "break",
+              "name": "break: Cambio crítico, para cambios que hagan incompatible la aplicación con versiones anteriores o cambios que actualicen las librerías principales de la aplicación."
+            }
+          ],
+          "message": "Selecciona el tipo de cambio que estás realizando"
+        },
+        {
+          "type": "input",
+          "name": "message",
+          "message": "Body."
+        },
+        {
+          "type": "confirm",
+          "name": "show_message",
+          "message": "Do you want to add body message in commit?"
+        }
+      ]
+    }
+  }
+}
