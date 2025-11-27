@@ -61,6 +61,11 @@ const eslintConfig = defineConfig([
         },
       ],
     },
+    settings: {
+      "better-tailwindcss": {
+        entryPoint: "app/globals.css",
+      },
+    },
   },
   // Override default ignores of eslint-config-next.
   globalIgnores([
