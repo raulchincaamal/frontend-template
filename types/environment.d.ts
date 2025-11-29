@@ -39,5 +39,9 @@ namespace NodeJS {
 
     NEXT_PUBLIC_DOMAIN_URL: string
     NEXT_PUBLIC_REDIRECT_LOGIN: string
+
+    PREFIX_LOGIN: string
+    SESSION_TOKEN: string
+    ID_FRONT: string
   }
 }

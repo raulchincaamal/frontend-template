@@ -6,14 +6,12 @@ export const metadata: Metadata = {
   description: "Frontend Template",
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+const RootLayout = async ({ children }: LayoutProps<"/">) => {
   return (
     <html lang="es-MX">
       <body>{children}</body>
     </html>
   )
 }
+
+export default RootLayout
