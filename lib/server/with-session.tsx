@@ -2,7 +2,7 @@ import { getServerSession } from "@/lib/server"
 import type { PageProps } from "@/lib/server/types"
 import { redirect } from "next/navigation"
 
-const withSession = (Component: React.ComponentType<PageProps>) => {
+export const withSession = (Component: React.ComponentType<PageProps>) => {
   const WithSession = async (props: PageProps) => {
     const session = await getServerSession()
     if (!session) {
@@ -15,5 +15,3 @@ const withSession = (Component: React.ComponentType<PageProps>) => {
 
   return WithSession
 }
-
-export default withSession
